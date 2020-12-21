@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html {
+  /* a cada 1rem será considera 10px */
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1.6rem;
+}
+footer.footer-bg {
+  /* background: linear-gradient(to right, yellow, #009966, purple); */
+  background: #53872c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 90%;
+  max-height: 1120rem;
+  margin: auto;
+  height: 40rem;
+}
+/* ----------------SESSÃO CONTATO------------------------------ */
+section.container-footer div.contato {
+  flex: 1 1 40rem;
+  /*  background: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.container-footer div.contato div.img-logo {
+  margin-right: 2rem;
+}
+
+section.container-footer div.contato div.conta-me h1 {
+  margin-top: -5rem;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+section.container-footer div.contato div.conta-me p {
+  font-size: 2.4;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+section.container-footer div.contato div.conta-me a {
+  font-size: 2.4;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* -----------------SESSÃO FORMULARIO----------------------- */
+
+section.container-footer div.formulario {
+  flex: 2 1 30rem;
+  /* background: red; */
+  display: flex;
+  margin-top: 7rem;
+
+  /* alinha o form no centro ao lado direito */
+  justify-content: center;
+  align-items: center;
+}
+section.container-footer div.formulario form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+section.container-footer div.formulario form .input-nome-email {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.container-footer div.formulario form .form-item {
+  position: relative;
+}
+section.container-footer div.formulario form .input-nome {
+  flex: 1 1 10rem;
+  display: flex;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
+}
+section.container-footer
+  div.formulario
+  form
+  .input-nome-email
+  input[type="text"] {
+  width: 30rem;
+  height: 4rem;
+}
+section.container-footer div.formulario form .input-email {
+  flex: 2 1 15rem;
+}
+
+section.container-footer div.formulario form .form-item label {
+  position: absolute;
+  left: 0px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* ----------- ESTILIZAÇÃO INPUT E TEXTAREA---------- */
+
+/* --- Estilizando os inputs */
+.form-item input {
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid #ffffff;
+  transition: all 0.3 ease;
+  color: #ffffff;
+}
+/* ---hover do input */
+.form-item input:hover {
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid #6b7207;
+  transition: all 0.3 ease;
+}
+
+.form-item input:focus ~ label,
+.form-item input:valid ~ label {
+  transform: translateY(-2.3rem);
+  font-size: 1.4rem;
+}
+/*---------- estilizando textarea ------------*/
+.form-item textarea {
+  background: none;
+  border: none;
+  resize: none;
+  border-bottom: 0.2rem solid #ffffff;
+  /* Não exibe a barra de rolagem quando ultrapassa o limite */
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.form-item textarea:hover {
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid #6b7207;
+}
+
+.form-item textarea:focus ~ label,
+.form-item textarea:valid ~ label {
+  transform: translateY(-2.3rem);
+  font-size: 1.4rem;
+}
+
+/*  -------------- ESTILIZAÇÃO BOTÃO ---------- */
+section.container-footer div.formulario form .btn {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+section.container-footer div.formulario form .btn input[type="submit"] {
+  display: inline-block;
+  font-size: 2rem;
+
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: #8d9700;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 30rem;
+}
+
+section.container-footer div.formulario form .btn input[type="submit"]:hover {
+  background: #6b7207;
+}
