@@ -23,9 +23,24 @@ body {
 body {
   font-size: 1.6rem;
 }
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 footer.footer-bg {
   /* background: linear-gradient(to right, yellow, #009966, purple); */
   background: #53872c;
+  /*  background-color: #9eabe4;
+  background-image: linear-gradient(315deg, #9eabe4 0%, #77eed8 74%); */
+
+  background-color: #357d54;
+  background-image: linear-gradient(315deg, #357d54 0%, #93cd94 74%);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,7 +158,7 @@ section.container-footer div.formulario form .form-item label {
 .form-item input:hover {
   background: none;
   border: none;
-  border-bottom: 0.2rem solid #6b7207;
+  border-bottom: 0.2rem solid #357d54;
   transition: all 0.3 ease;
 }
 
@@ -154,6 +169,7 @@ section.container-footer div.formulario form .form-item label {
 }
 /*---------- estilizando textarea ------------*/
 .form-item textarea {
+  font-family: "Nunito", sans-serif;
   background: none;
   border: none;
   resize: none;
@@ -166,7 +182,7 @@ section.container-footer div.formulario form .form-item label {
 .form-item textarea:hover {
   background: none;
   border: none;
-  border-bottom: 0.2rem solid #6b7207;
+  border-bottom: 0.2rem solid #357d54;
 }
 
 .form-item textarea:focus ~ label,
@@ -189,7 +205,7 @@ section.container-footer div.formulario form .btn input[type="submit"] {
   padding: 10px;
   border-radius: 10px;
   text-transform: uppercase;
-  background-color: #8d9700;
+  background-color: #357d54 /* #8d9700 */;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -197,5 +213,59 @@ section.container-footer div.formulario form .btn input[type="submit"] {
 }
 
 section.container-footer div.formulario form .btn input[type="submit"]:hover {
-  background: #6b7207;
+  background: #93cd94;
+}
+
+/* ------- ESTILIZAÇÃO DAS MIDIAS SOCIAIS ------------ */
+
+.conecte-se {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conecte-se .conectar h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
+
+.conecte-se ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.conecte-se ul li {
+}
+
+.conecte-se ul li a img:hover {
+  opacity: 0.5;
+}
+
+.alvorada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alvorada p {
+  color: #ffffff;
+}
+.alvorada hr {
+  margin: 1rem 1rem;
+}
+
+.alvorada {
+  margin-top: 8rem;
+}
+
+.alvorada .separador {
+  width: 70rem;
+  height: 0.1rem;
+  background: #ffffff;
+  margin: 2rem 2rem;
 }
