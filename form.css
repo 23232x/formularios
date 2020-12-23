@@ -225,14 +225,6 @@ section.container-footer div.formulario form .btn input[type="submit"]:hover {
   flex-direction: column;
 }
 
-.conecte-se .conectar h3 {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 2.4rem;
-  margin-bottom: 4rem;
-  font-size: 2rem;
-}
-
 .conecte-se ul {
   display: flex;
   justify-content: center;
@@ -240,6 +232,8 @@ section.container-footer div.formulario form .btn input[type="submit"]:hover {
 }
 
 .conecte-se ul li {
+  margin: 5px;
+  padding: 5px;
 }
 
 .conecte-se ul li a img:hover {
